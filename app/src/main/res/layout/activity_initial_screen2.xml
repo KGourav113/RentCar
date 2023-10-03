@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Firebase.InitialScreen"
+    android:orientation="vertical"
+    android:background="@drawable/appbackground">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_175sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_70sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="caranimation.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="center"
+        android:id="@+id/LoginButton"
+        android:background="@drawable/buttons"
+        android:text="@string/login"
+        android:textSize="@dimen/_25sdp"/>
+    <Button
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+
+        android:layout_gravity="center"
+        android:id="@+id/signupButton"
+        android:background="@drawable/buttons"
+        android:text="@string/sign_up"
+        android:textSize="@dimen/_25sdp"/>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_25sdp"
+        android:text="@string/continue_as_guest"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
